@@ -102,3 +102,8 @@ footer ul li {
 footer ul li:not(:last-child) {
     margin-right: 1rem;
 }
+
+#link--to-portfolio {
+    text-decoration: none;
+    color: black;
+}
