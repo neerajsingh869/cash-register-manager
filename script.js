@@ -1,9 +1,21 @@
 const checkButton = document.querySelector('#check-btn');
 const denominations = [2000, 500, 100, 20, 10, 5, 1];
+const billAmountInput = document.querySelector('#bill-amount-input');
+
+billAmountInput.addEventListener('input', e => {
+    const billAmount = e.target.value;
+    const givenCashContainer = document.querySelector('#given-cash-container');
+
+    if (billAmount !== "" && billAmount !== null) {
+        givenCashContainer.style.display = "block";
+    } else {
+        givenCashContainer.style.display = "none";
+    }
+})
 
 checkButton.addEventListener('click', e => {
 
-    const billAmount = document.querySelector('#bill-amount-input').value;
+    const billAmount = billAmountInput.value;
     const givenCash = document.querySelector('#cash-given-input').value;
     const outputMsgBox = document.querySelector('#output-msg');
 
