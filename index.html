@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Register Manager</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/bdf30f00c6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Cash Register Manager</h1>
+        <h1 class="comp--color-primary">Cash Register Manager</h1>
     </header>
     <main>
         <p>
             Enter the bill amount and cash given by the customer and know minimum number of notes to return.
         </p>
-        <label for="">Bill Amount:</label>
-        <input type="text">
-        <label for="">Cash Given</label>
-        <input type="text">
-        <button>Check</button>
+        <div>
+            <p id="bill-amount-label">Bill Amount:</p>
+            <input type="text" id="bill-amount-input">
+        </div>
+        <div>
+            <p id="cash-given-label">Cash Given:</p>
+            <input type="text" id="cash-given-input">
+        </div>
+        <button id="check-btn">Check</button>
         <p>
             Do you wanna wash plates?
         </p>
@@ -87,17 +92,17 @@
         <ul>
             <li>
                 <a href="https://github.com/neerajsingh869" target="_blank">
-                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-github comp--color-primary"></i>
                 </a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/neerajsingh869" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-linkedin comp--color-primary"></i>
                 </a>
             </li>
             <li>
                 <a href="https://twitter.com/neerajsingh869" target="_blank">
-                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-square-x-twitter comp--color-primary"></i>
                 </a>
             </li>
         </ul>
